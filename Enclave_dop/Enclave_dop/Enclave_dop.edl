@@ -1,0 +1,8 @@
+enclave {
+    trusted {
+        /*public uint32_t get_sealed_data_size(size_t idx);*/
+		public void seal([out, size=len] char* buf, size_t len, size_t idx, int flag);
+        /*public void unseal([in, size=len] char* buf, size_t len, size_t idx);*/
+        /*public char unseal2(uint8_t* sealed, size_t idx);*/
+    };
+};
